@@ -191,19 +191,85 @@
             }
         
         /* Sessão 2 */
-        .section-2{
+            .section-2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 4em 6em;
+                background-color: var(--azulEscuro2);
+                color: white;
+                background-image: url(assets/images/imagens-de-fundo/imagem-de-fundo1920x1080.png);
+                background-size: cover;
+                background-position: center;
+            }
+            .section-2 p{
+                text-align: center;
+            }
+
+        /* Sessão 3 */
+        .section-3{
+            width: 100%;
+            padding: 1em 3em;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            padding: 4em 6em;
-            background-color: var(--azulEscuro2);
-            color: white;
-            background-image: url(assets/images/imagens-de-fundo/imagem-de-fundo1920x1080.png);
-            background-size: cover;
-            background-position: center;
         }
-        .section-2 p{
+        .section-3 > p{
+            background-color: var(--dourado);
+            margin-bottom: 0;
+            padding: .2em;
+        }
+        .section-3 h1{
+            margin-top: 0;
+            margin-bottom: .4em;
+            font-size: 3.5em;
+        }
+        .section-3 > div{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+        }
+        div.servico{
+            width: 275px;
+            height: 345px;
+            background-color: var(--azulEscuro1);
+            color: var(--dourado);
+            border-radius: 60px 0px 60px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
+            padding: .5em;
+            margin-bottom: 1em;
+            transition: .5s;
+        }
+        div.servico:hover{
+            scale: 101%;
+            box-shadow: 2px 4px 12px 5px rgba(0, 0, 0, 0.2);
+        }
+        div.servico div p{
+            margin-bottom: .4em;
+            margin-top: .5em;
+        }
+        div.servico div a{
+            color: white;
+            text-decoration: underline;
+        }
+        div.servico div img{
+            height: 100%;
+        }
+        div.servico div:nth-child(1){
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        div.servico div:nth-child(2){
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
     </style>
@@ -250,6 +316,68 @@
             </div>
             <div class="section-2">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem atque eligendi unde excepturi ea enim et, sit itaque nam maiores ab! Natus, odit itaque minima ipsum deleniti perferendis temporibus consequatur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptatem incidunt magnam porro numquam praesentium repellat unde veritatis modi! Commodi quia corporis provident iste, porro voluptate? Dolorem eaque dolore fugiat?</p>
+            </div>
+            <div class="section-3">
+                <p class="poppins-bold">CONHEÇA NOSSOS</p>
+                <h1>Serviços</h1>
+                <div>
+                    <div class="servico">
+                        <div>
+                            <img src="assets/images/servicos/administracao-de-condominios.png" alt="Imagem representativa para o serviço de administração de condomínios">
+                        </div>
+                        <div>
+                            <p class="montserrat-regular">Administração de Condomínios</p>
+                            <a href="" class="montserrat-regular">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="servico">
+                        <div>
+                            <img src="assets/images/servicos/assessoria-contabil.png" alt="Imagem representativa para o serviço de assessoria contábil">
+                        </div>
+                        <div>
+                            <p class="montserrat-regular">Assessoria Contábil</p>
+                            <a href="" class="montserrat-regular">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="servico">
+                        <div>
+                            <img src="assets/images/servicos/assessoria-juridica.png" alt="Imagem representativa para o serviço de assessoria jurídica">
+                        </div>
+                        <div>
+                            <p class="montserrat-regular">Assessoria Jurídica</p>
+                            <a href="" class="montserrat-regular">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="servico">
+                        <div>
+                            <img src="assets/images/servicos/sindico-profissional.png" alt="Imagem representativa para o serviço de sindico profissional">
+                        </div>
+                        <div>
+                            <p class="montserrat-regular">Síndico Profissional</p>
+                            <a href="" class="montserrat-regular">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="servico">
+                        <div>
+                            <img src="assets/images/servicos/recursos-humanos.png" alt="Imagem representativa para o serviço de recursos humanos">
+                        </div>
+                        <div>
+                            <p class="montserrat-regular">Recursos Humanos</p>
+                            <a href="" class="montserrat-regular">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="servico">
+                        <div>
+                            <img src="assets/images/servicos/cobranca.png" alt="Imagem representativa para o serviço de cobrança">
+                        </div>
+                        <div>
+                            <p class="montserrat-regular">Cobrança</p>
+                            <a href="" class="montserrat-regular">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <footer></footer>
