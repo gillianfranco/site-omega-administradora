@@ -79,6 +79,8 @@
         /* Barra de Navegação */
         header{
             width: 100%;
+            display: flex;
+            flex-direction: column;
         }
         #navBar{
             width: 100%;
@@ -90,6 +92,7 @@
             align-items: center;
             background-color: var(--azulCinzaEscuro);
             padding: .5em;
+            z-index: 1;
         }
         #navBar ul{
             display: flex;
@@ -110,15 +113,39 @@
         }
         #navBar ul li:hover{
             scale: 102%;
-            transition: 0.2s;
+            transition: 0.5s;
         }
         #navBar div a img{
-            transition: .2s;
+            transition: .5s;
         }
         #navBar div a img:hover{
             scale: 102%;
         }
-
+        /* Above the fold */
+        header > img{
+            width: 100%;
+            position: sticky;
+        }
+        #containerBotaoAreaDoCondomino{
+            background: linear-gradient(180deg, var(--azulEscuro2) 0%, var(--azulCinzaEscuro) 50%, var(--azulCinzaClaro) 100%);
+            z-index: 1;
+            width: 100%;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        }
+        #containerBotaoAreaDoCondomino a{
+            background-color: var(--dourado);
+            padding: .6em;
+            color: white;
+            border-radius: .2em;
+            transition: .5s;
+        }
+        #containerBotaoAreaDoCondomino a:hover{
+            scale: 102%;
+        }
 
     </style>
     <title>Ômega Administradora e Consultoria</title>
@@ -142,6 +169,10 @@
                     <p class="color-vermelho">&#9776;</p>
                 </div> -->
             </nav>
+            <img src="assets/images/imagens-above-the-fold/imagem-above-the-fold1896x656.jpg" alt="Imagem de prédios">
+            <div id="containerBotaoAreaDoCondomino">
+                <a href="" class="poppins-bold">CLIQUE AQUI PARA ACESSAR A ÁREA DO CONDÔMINO</a>
+            </div>
         </header>
         <section>
 
