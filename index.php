@@ -120,47 +120,74 @@
                 scale: 102%;
             }
         /* Above the fold */
-        #containerImagem-above-the-fold{
-            height: 450px;
-            background-image: url(assets/images/imagens-above-the-fold/imagem-above-the-fold1896x656.jpg);
-            background-attachment: scroll;
-            background-position: center;
+            .containerImagem-above-the-fold{
+                height: 450px;
+                background-image: url(assets/images/imagens-above-the-fold/imagem-above-the-fold1896x656.jpg);
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                color: white;
+            }
+            .containerImagem-above-the-fold div{
+                text-align: center;
+            }
+            .containerImagem-above-the-fold div h1{
+                font-size: 3em;
+                text-shadow: 1px 1px 2px black;
+                margin-bottom: 0;
+            }
+            .containerImagem-above-the-fold div p{
+                font-size: 1.5em;
+                margin-top: .5em;
+                text-shadow: 1px 1px 2px black;
+            }
+            #containerBotaoAreaDoCondomino{
+                background: linear-gradient(180deg, var(--azulEscuro2) 0%, var(--azulCinzaEscuro) 50%, var(--azulCinzaClaro) 100%);
+                width: 100%;
+                height: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #containerBotaoAreaDoCondomino a{
+                background-color: var(--dourado);
+                padding: .6em;
+                color: white;
+                border-radius: .2em;
+                transition: .5s;
+            }
+            #containerBotaoAreaDoCondomino a:hover{
+                scale: 102%;
+            }
+
+        /* Sessão 1 */
+        .section-1{
+            width: 100%;
+            padding: 1em 3em;
+            display: flex;
+            flex-direction: row;
+        }
+        .section-1 div{
+            width: 50%;
+            padding: 0em 1em;
+        }
+        .section-1 div:nth-child(2){
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
-            color: white;
         }
-        #containerImagem-above-the-fold div{
+        .section-1 div h2{
             text-align: center;
         }
-        #containerImagem-above-the-fold div h1{
-            font-size: 3em;
-            text-shadow: 1px 1px 2px black;
-            margin-bottom: 0;
+        .section-1 div p{
+            text-align: justify;
         }
-        #containerImagem-above-the-fold div p{
-            font-size: 1.5em;
-            margin-top: .5em;
-            text-shadow: 1px 1px 2px black;
-        }
-        #containerBotaoAreaDoCondomino{
-            background: linear-gradient(180deg, var(--azulEscuro2) 0%, var(--azulCinzaEscuro) 50%, var(--azulCinzaClaro) 100%);
-            width: 100%;
-            height: 90px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #containerBotaoAreaDoCondomino a{
-            background-color: var(--dourado);
-            padding: .6em;
-            color: white;
-            border-radius: .2em;
-            transition: .5s;
-        }
-        #containerBotaoAreaDoCondomino a:hover{
-            scale: 102%;
+        .section-1 div img{
+            width: 75%;
         }
 
     </style>
@@ -185,7 +212,7 @@
                     <p class="color-vermelho">&#9776;</p>
                 </div> -->
             </nav>
-            <div id="containerImagem-above-the-fold">
+            <div class="containerImagem-above-the-fold">
                 <div>
                     <h1 class="montserrat-bold">Ômega Administradora e Consultoria</h1>
                     <p>excelência em gestão, convivência de qualidade</p>
@@ -196,11 +223,26 @@
             </div>
         </header>
         <section>
-
+            <div class="section-1">
+                <div>  
+                    <h2><span style="color: white; background-color: var(--dourado); padding: 0.1em;">QUEM É A</span><br>Ômega Administradora?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit vitae, quaerat quibusdam distinctio laudantium rem. Error, harum blanditiis consequuntur accusantium alias et dicta voluptatum placeat possimus, quaerat dolores id? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quae, aperiam ratione nesciunt corporis sunt libero enim dolorum accusamus velit odio necessitatibus architecto dolorem suscipit illo rerum vel, iste dolor?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti hic mollitia aut illo earum quas aliquid quisquam deserunt eveniet atque exercitationem placeat perferendis consequuntur itaque, cumque facilis maxime soluta assumenda.</p>
+                </div>
+                <div>
+                    <img src="assets/images/representacoes-valores/valores.png" alt="Valores da Ômega Administradora">
+                </div>
+            </div>
         </section>
         <footer></footer>
     </main>
-
+    
+    <script>
+        window.addEventListener('scroll', function() {
+            let scrolled = window.pageYOffset;
+            let parallax = document.querySelector('.containerImagem-above-the-fold');
+            parallax.style.backgroundPositionY = -(scrolled * 0.6) + 'px';
+        });
+    </script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
