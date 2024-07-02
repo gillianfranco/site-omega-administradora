@@ -146,7 +146,7 @@
                 text-shadow: 1px 1px 2px black;
             }
             #containerBotaoAreaDoCondomino{
-                background: linear-gradient(180deg, var(--azulEscuro2) 0%, var(--azulCinzaEscuro) 50%, var(--azulCinzaClaro) 100%);
+                background: linear-gradient(180deg, var(--azulCinzaClaro) 0%, var(--azulCinzaEscuro) 50%, var(--azulEscuro2) 100%);
                 width: 100%;
                 height: 90px;
                 display: flex;
@@ -165,29 +165,45 @@
             }
 
         /* Sessão 1 */
-        .section-1{
-            width: 100%;
-            padding: 1em 3em;
-            display: flex;
-            flex-direction: row;
-        }
-        .section-1 div{
-            width: 50%;
-            padding: 0em 1em;
-        }
-        .section-1 div:nth-child(2){
+            .section-1{
+                width: 100%;
+                padding: 1em 3em;
+                display: flex;
+                flex-direction: row;
+            }
+            .section-1 div{
+                width: 50%;
+                padding: 0em 1em;
+            }
+            .section-1 div:nth-child(2){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .section-1 div h2{
+                text-align: center;
+            }
+            .section-1 div p{
+                text-align: justify;
+            }
+            .section-1 div img{
+                width: 75%;
+            }
+        
+        /* Sessão 2 */
+        .section-2{
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 4em 6em;
+            background-color: var(--azulEscuro2);
+            color: white;
+            background-image: url(assets/images/imagens-de-fundo/imagem-de-fundo1920x1080.png);
+            background-size: cover;
+            background-position: center;
         }
-        .section-1 div h2{
+        .section-2 p{
             text-align: center;
-        }
-        .section-1 div p{
-            text-align: justify;
-        }
-        .section-1 div img{
-            width: 75%;
         }
 
     </style>
@@ -231,6 +247,9 @@
                 <div>
                     <img src="assets/images/representacoes-valores/valores.png" alt="Valores da Ômega Administradora">
                 </div>
+            </div>
+            <div class="section-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem atque eligendi unde excepturi ea enim et, sit itaque nam maiores ab! Natus, odit itaque minima ipsum deleniti perferendis temporibus consequatur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptatem incidunt magnam porro numquam praesentium repellat unde veritatis modi! Commodi quia corporis provident iste, porro voluptate? Dolorem eaque dolore fugiat?</p>
             </div>
         </section>
         <footer></footer>
