@@ -77,64 +77,80 @@
         }
 
         /* Barra de Navegação */
-        header{
-            width: 100%;
+            header{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            #navBar{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                background-color: var(--azulCinzaEscuro);
+                padding: .5em;
+                z-index: 1;
+            }
+            #navBar ul{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            #navBar ul li{
+                margin-right: 2vw;
+                list-style: none;
+                transition: 0.2s;
+            }
+            #navBar ul li a{
+                color: white;
+            }
+            #navBar ul li a#areaDoCondomino{
+                background-color: var(--dourado);
+                padding: .5em;
+            }
+            #navBar ul li:hover{
+                scale: 102%;
+                transition: 0.5s;
+            }
+            #navBar div a img{
+                transition: .5s;
+            }
+            #navBar div a img:hover{
+                scale: 102%;
+            }
+        /* Above the fold */
+        #containerImagem-above-the-fold{
+            height: 450px;
+            background-image: url(assets/images/imagens-above-the-fold/imagem-above-the-fold1896x656.jpg);
+            background-attachment: scroll;
+            background-position: center;
             display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: column;
-        }
-        #navBar{
-            width: 100%;
-            position: absolute;
-            top: 0;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            background-color: var(--azulCinzaEscuro);
-            padding: .5em;
-            z-index: 1;
-        }
-        #navBar ul{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-        #navBar ul li{
-            margin-right: 2vw;
-            list-style: none;
-            transition: 0.2s;
-        }
-        #navBar ul li a{
             color: white;
         }
-        #navBar ul li a#areaDoCondomino{
-            background-color: var(--dourado);
-            padding: .5em;
+        #containerImagem-above-the-fold div{
+            text-align: center;
         }
-        #navBar ul li:hover{
-            scale: 102%;
-            transition: 0.5s;
+        #containerImagem-above-the-fold div h1{
+            font-size: 3em;
+            text-shadow: 1px 1px 2px black;
+            margin-bottom: 0;
         }
-        #navBar div a img{
-            transition: .5s;
-        }
-        #navBar div a img:hover{
-            scale: 102%;
-        }
-        /* Above the fold */
-        header > img{
-            width: 100%;
-            position: sticky;
+        #containerImagem-above-the-fold div p{
+            font-size: 1.5em;
+            margin-top: .5em;
+            text-shadow: 1px 1px 2px black;
         }
         #containerBotaoAreaDoCondomino{
             background: linear-gradient(180deg, var(--azulEscuro2) 0%, var(--azulCinzaEscuro) 50%, var(--azulCinzaClaro) 100%);
-            z-index: 1;
             width: 100%;
             height: 90px;
             display: flex;
             justify-content: center;
             align-items: center;
-            z-index: 1;
         }
         #containerBotaoAreaDoCondomino a{
             background-color: var(--dourado);
@@ -169,7 +185,12 @@
                     <p class="color-vermelho">&#9776;</p>
                 </div> -->
             </nav>
-            <img src="assets/images/imagens-above-the-fold/imagem-above-the-fold1896x656.jpg" alt="Imagem de prédios">
+            <div id="containerImagem-above-the-fold">
+                <div>
+                    <h1 class="montserrat-bold">Ômega Administradora e Consultoria</h1>
+                    <p>excelência em gestão, convivência de qualidade</p>
+                </div>
+            </div>
             <div id="containerBotaoAreaDoCondomino">
                 <a href="" class="poppins-bold">CLIQUE AQUI PARA ACESSAR A ÁREA DO CONDÔMINO</a>
             </div>
