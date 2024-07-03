@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/images/logomarcas-omega/logo108x135.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <style>
         :root{
             --azulEscuro1: #010c2a;
@@ -294,7 +295,62 @@
             }
 
         /* Sessão 5 */
+            .section-5{
+                padding-bottom: 1em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .section-5 > p{
+                text-align: center;
+                font-size: 1.5em;
+                margin-top: 0;
+            }
+            .swiper-container{
+                width: 100%;
+                padding: 1em;
+                overflow-x: hidden;
+            }
+            .swiper-wrapper{
+                width: 50%;
+            }
+            .swiper-slide {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 1em;
+                font-size: 18px;
+                color: #fff;
+                background: linear-gradient(180deg, var(--azulCinzaClaro) 0%, var(--azulCinzaEscuro) 50%, var(--azulEscuro2) 100%);
+                height: 300px; /* Ajuste a altura do slide */
+                transition: transform 0.5s;
+            }
+            .swiper-slide-active {
+                transform: scale(1.2);
+                background: linear-gradient(180deg, var(--azulCinzaClaro) 0%, var(--azulCinzaEscuro) 50%, var(--azulEscuro2) 100%);
+            }
+            .nome{
+                font-size: 1.5em;
+                margin-bottom: .5em;
+            }
+            .avaliacao{
+                text-align: center;
+                margin-top: 0em;
+                margin-bottom: 0em;
+            }
+            .estrelas{
+                font-size: 2em;
+                color: #ffbe0b;
+                margin-top: 0em;
+                margin-bottom: 0em;
+            }
+            .swiper-button-next, .swiper-button-prev{
+                color: var(--dourado);
+            }
 
+        /* Sessão 6 */
+        
 
     </style>
     <title>Ômega Administradora e Consultoria</title>
@@ -408,18 +464,147 @@
                 <h1>Ômega Administradora?</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem iusto perspiciatis ab sit illum quaerat adipisci nisi vel, eaque voluptate assumenda deserunt quidem molestias, recusandae, excepturi inventore suscipit maiores atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus tempore dolorem nemo reiciendis. Ex pariatur dicta possimus, id magnam dignissimos, animi velit accusantium atque recusandae quam molestias sunt hic?</p>
             </div>
+            <div class="section-5">
+                <p class="montserrat-bold">Somos a administradora de condomínios<br>mais bem avaliada no Google em Uberlândia</p>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="nome">Silvia Mara</p>
+                            <p class="avaliacao">"Atendimento perfeito e humanizado. Superou minhas expectativas. Tive meu problema resolvido com muita simpatia, profissionalismo e cordialidade."</p>
+                            <p class="estrelas">★★★★★</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="nome">Eliezer Andrade</p>
+                            <p class="avaliacao">"Tive uma excelente experiência com a Ômega Administradora de Condomínios. Consegui resolver de modo rápido uma questão do meu apartamento. Show de bola!"</p>
+                            <p class="estrelas">★★★★★</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="nome">Rafhael Barbosa</p>
+                            <p class="avaliacao">"Obrigado Ômega por tudo que fizeram e ainda vão fazer pelo nosso condômino Lótus, vocês são surpreendentes!"</p>
+                            <p class="estrelas">★★★★★</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="nome">Palumino Carnes</p>
+                            <p class="avaliacao">"Estou extremamente satisfeito com os serviços de contabilidade da Ômega. Desde o início, eles foram proativos e me ajudaram bastante. A clareza nas explicações sobre questões fiscais e financeiras foi impressionante. Além disso, sempre que ligo ou mando mensagem me respondem na hora. Recomendo fortemente os serviços da Ômega a qualquer pessoa que procure uma contabilidade confiável e profissional."</p>
+                            <p class="estrelas">★★★★★</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="nome">Érika Ferreira</p>
+                            <p class="avaliacao">"Equipe muito educada e prestativa, só tenho elogios desde que começaram a me atender."</p>
+                            <p class="estrelas">★★★★★</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="nome">Maria Alves</p>
+                            <p class="avaliacao">"Confiança, respeito, responsabilidade e domínio na área administrativa e jurídica são requisitos que definem bem essa empresa. Tive a oportunidade de conhecer a empresa e então tenho total credibilidade no seu trabalho. Como são honestos e comprometidos com o que fazem... Parabéns pelo trabalho!!!!"</p>
+                            <p class="estrelas">★★★★★</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="nome">Nayane Santos</p>
+                            <p class="avaliacao">"Excelente atendimento!! Me atendeu com bastante atenção, e me trouxe resultado esperado."</p>
+                            <p class="estrelas">★★★★★</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="nome">Roberto Júnior</p>
+                            <p class="avaliacao">"Atendimento profissional em todos os aspectos. Análises e condições personalizadas. Melhor administradora do mercado."</p>
+                            <p class="estrelas">★★★★★</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="nome">Cintia Florentino</p>
+                            <p class="avaliacao">"Empresa e equipe responsável e ética!!!! Profissionais competentes e dedicados na busca por serviços de excelência e eficácia aos prazos. Cuidado com os moradores e agilidade para resolver os problemas."</p>
+                            <p class="estrelas">★★★★★</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="nome">Igor Oliveira Soares</p>
+                            <p class="avaliacao">"Nossa, muito bom. O atendimento que recebi foi de excelência e suma importância para resolver meu problema."</p>
+                            <p class="estrelas">★★★★★</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="nome">Pollyanna Oliveira Rodrigues</p>
+                            <p class="avaliacao">"Empresa e equipe que tem um atendimento humanizado. Na maioria das vezes as pessoas procuram a empresa pra solucionar algum problema ou questão que esteja enfrentando. E o cuidado que a equipe conduz a situação se colocando no lugar da pessoa, é muito importante e esse é um diferencial da Ômega. Parabéns pela eficiência, competência, profissionalismo e dedicação na entrega dos serviços aos clientes."</p>
+                            <p class="estrelas">★★★★★</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="nome">Nelson José de Souza Souza</p>
+                            <p class="avaliacao">"Uma ótima administradora de condomínios, agradeço por está cuidando tão bem de nosso condomínio."</p>
+                            <p class="estrelas">★★★★★</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="nome">Antônio Júnior</p>
+                            <p class="avaliacao">"Meu condomínio já teve outras administradoras, mas a Ômega está surpreendendo com o cuidado e atenção aos moradores. Sempre que preciso de auxilio, sou atendido rapidamente e o problema ou solicitação é resolvida. Não ficam enrolando te jogando pra setores que ninguém resolve. Indico a empresa pois estou gostando muito do serviço."</p>
+                            <p class="estrelas">★★★★★</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="nome">Karla Alves</p>
+                            <p class="avaliacao">"Confiei no trabalho da Ômega e eles me mostraram o quanto são capazes. São profissionais que trabalham com muita responsabilidade e compromisso com a administração do meu condomínio, sempre pontuando o que se pode melhorar e o que já está adequado. Obrigada por fazerem parte do nosso time!!!"</p>
+                            <p class="estrelas">★★★★★</p>
+                        </div>
+                        <!-- 15 -->
+                    </div>
+                    <!-- Adicione botões de navegação, se desejar -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Adicione paginação, se desejar -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+            </div>
             
         </section>
         <footer></footer>
     </main>
-    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script>
+        // Animação Imagem do Above The Fold
         window.addEventListener('scroll', function() {
             let scrolled = window.pageYOffset;
             let parallax = document.querySelector('.containerImagem-above-the-fold');
             parallax.style.backgroundPositionY = -(scrolled * 0.6) + 'px';
         });
+
+        // Inicialização do Swiper com o efeito de coverflow
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+            delay: 10000,
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            effect: 'coverflow',
+            coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+            },
+            slidesPerView: 'auto',
+            centeredSlides: true,
+        });
+
+        // Função para pausar o autoplay
+        function pauseAutoplay() {
+            swiper.autoplay.stop();
+        }
+
+        // Função para retomar o autoplay
+        function resumeAutoplay() {
+            swiper.autoplay.start();
+        }
+
+        // Adicionar eventos de mouse e toque aos slides
+        var slides = document.querySelectorAll('.swiper-slide');
+        slides.forEach(function(slide) {
+            slide.addEventListener('mousedown', pauseAutoplay);
+            slide.addEventListener('mouseup', resumeAutoplay);
+            slide.addEventListener('touchstart', pauseAutoplay);
+            slide.addEventListener('touchend', resumeAutoplay);
+        });
     </script>
-    <script src="assets/js/script.js"></script>
 </body>
 </html>
