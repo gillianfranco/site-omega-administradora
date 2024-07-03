@@ -167,7 +167,7 @@
         /* Sessão 1 */
             .section-1{
                 width: 100%;
-                padding: 1em 3em;
+                padding: 2em 3em;
                 display: flex;
                 flex-direction: row;
             }
@@ -207,70 +207,94 @@
             }
 
         /* Sessão 3 */
-        .section-3{
-            width: 100%;
-            padding: 1em 3em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .section-3 > p{
-            background-color: var(--dourado);
-            margin-bottom: 0;
-            padding: .2em;
-        }
-        .section-3 h1{
-            margin-top: 0;
-            margin-bottom: .4em;
-            font-size: 3.5em;
-        }
-        .section-3 > div{
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            justify-content: space-around;
-        }
-        div.servico{
-            width: 275px;
-            height: 345px;
-            background-color: var(--azulEscuro1);
-            color: var(--dourado);
-            border-radius: 60px 0px 60px 0px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: .5em;
-            margin-bottom: 1em;
-            transition: .5s;
-        }
-        div.servico:hover{
-            scale: 101%;
-            box-shadow: 2px 4px 12px 5px rgba(0, 0, 0, 0.2);
-        }
-        div.servico div p{
-            margin-bottom: .4em;
-            margin-top: .5em;
-        }
-        div.servico div a{
-            color: white;
-            text-decoration: underline;
-        }
-        div.servico div img{
-            height: 100%;
-        }
-        div.servico div:nth-child(1){
-            height: 70%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        div.servico div:nth-child(2){
-            height: 30%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+            .section-3{
+                width: 100%;
+                padding: 2em 5em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .section-3 > p{
+                background-color: var(--dourado);
+                margin-bottom: 0;
+                padding: .2em;
+            }
+            .section-3 h1{
+                margin-top: 0;
+                margin-bottom: .4em;
+                font-size: 3.5em;
+            }
+            .section-3 > div{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-around;
+            }
+            div.servico{
+                width: 275px;
+                height: 345px;
+                background-color: var(--azulEscuro1);
+                color: var(--dourado);
+                border-radius: 60px 0px 60px 0px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: .5em;
+                margin-bottom: 1em;
+                transition: .5s;
+            }
+            div.servico:hover{
+                scale: 101%;
+                box-shadow: 2px 4px 12px 5px rgba(0, 0, 0, 0.2);
+            }
+            div.servico div p{
+                margin-bottom: .4em;
+                margin-top: .5em;
+            }
+            div.servico div a{
+                color: white;
+                text-decoration: underline;
+            }
+            div.servico div img{
+                height: 100%;
+            }
+            div.servico div:nth-child(1){
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            div.servico div:nth-child(2){
+                height: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+        /* Sessão 4 */
+            .section-4{
+                padding: 2em 7em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .section-4 p:nth-child(1){
+                background-color: var(--dourado);
+                margin-bottom: 0;
+                padding: .2em;
+            }
+            .section-4 h1{
+                margin-top: 0;
+                margin-bottom: .4em;
+                font-size: 2em;
+            }
+            .section-4 p{
+                text-align: justify;
+            }
+
+        /* Sessão 5 */
+
 
     </style>
     <title>Ômega Administradora e Consultoria</title>
@@ -379,6 +403,12 @@
                     </div>
                 </div>
             </div>
+            <div class="section-4">
+                <p class="poppins-bold">POR QUE ESCOLHER A</p>
+                <h1>Ômega Administradora?</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem iusto perspiciatis ab sit illum quaerat adipisci nisi vel, eaque voluptate assumenda deserunt quidem molestias, recusandae, excepturi inventore suscipit maiores atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus tempore dolorem nemo reiciendis. Ex pariatur dicta possimus, id magnam dignissimos, animi velit accusantium atque recusandae quam molestias sunt hic?</p>
+            </div>
+            
         </section>
         <footer></footer>
     </main>
