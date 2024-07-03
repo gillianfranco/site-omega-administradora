@@ -122,8 +122,8 @@
             }
         /* Above the fold */
             .containerImagem-above-the-fold{
-                height: 450px;
-                background-image: url(assets/images/imagens-above-the-fold/imagem-above-the-fold1896x656.jpg);
+                height: 420px;
+                background-image: url(assets/images/imagens-above-the-fold/imagem-above-the-fold1896x656.png);
                 background-attachment: fixed;
                 background-size: cover;
                 background-position: center;
@@ -149,7 +149,7 @@
             #containerBotaoAreaDoCondomino{
                 background: linear-gradient(180deg, var(--azulCinzaClaro) 0%, var(--azulCinzaEscuro) 50%, var(--azulEscuro2) 100%);
                 width: 100%;
-                height: 90px;
+                height: 120px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -172,9 +172,12 @@
                 display: flex;
                 flex-direction: row;
             }
-            .section-1 div{
+            .section-1 > div{
                 width: 50%;
                 padding: 0em 1em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
             .section-1 div:nth-child(2){
                 display: flex;
@@ -183,9 +186,13 @@
             }
             .section-1 div h2{
                 text-align: center;
+                margin-top: 0em;
+                margin-bottom: 0em;
             }
-            .section-1 div p{
-                text-align: justify;
+            .section-1 div p:nth-child(1){
+                background-color: var(--dourado);
+                margin-bottom: 0;
+                padding: .2em;
             }
             .section-1 div img{
                 width: 75%;
@@ -310,6 +317,7 @@
                 width: 100%;
                 padding: 1em;
                 overflow-x: hidden;
+                margin-bottom: 1em;
             }
             .swiper-wrapper{
                 width: 50%;
@@ -348,6 +356,42 @@
             .swiper-button-next, .swiper-button-prev{
                 color: var(--dourado);
             }
+            #searchBar{
+                width: 1000px;
+                background-color: white;
+                border-radius: 50px;
+                box-shadow: 0px 0px 60px 6px rgba(0, 0, 0, 0.2);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: .2em 1em;
+            }
+            .typewriter{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                font-size: 1.5em;
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                padding-left: 1em;
+            }
+            .cursor {
+                width: 1px;
+                height: 25px;
+                background-color: black;
+                margin-left: 2px;
+                animation: blink 0.7s infinite;
+            }
+            @keyframes blink {
+                0%, 50% {
+                    opacity: 1;
+                }
+                50%, 100% {
+                    opacity: 0;
+                }
+            }
 
         /* Sessão 6 */
         
@@ -375,10 +419,10 @@
                 </div> -->
             </nav>
             <div class="containerImagem-above-the-fold">
-                <div>
+                <!-- <div>
                     <h1 class="montserrat-bold">Ômega Administradora e Consultoria</h1>
                     <p>excelência em gestão, convivência de qualidade</p>
-                </div>
+                </div> -->
             </div>
             <div id="containerBotaoAreaDoCondomino">
                 <a href="" class="poppins-bold">CLIQUE AQUI PARA ACESSAR A ÁREA DO CONDÔMINO</a>
@@ -386,8 +430,9 @@
         </header>
         <section>
             <div class="section-1">
-                <div>  
-                    <h2><span style="color: white; background-color: var(--dourado); padding: 0.1em;">QUEM É A</span><br>Ômega Administradora?</h2>
+                <div> 
+                    <p class="poppins-bold">QUEM É A</p>
+                    <h2>Ômega Administradora?</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit vitae, quaerat quibusdam distinctio laudantium rem. Error, harum blanditiis consequuntur accusantium alias et dicta voluptatum placeat possimus, quaerat dolores id? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quae, aperiam ratione nesciunt corporis sunt libero enim dolorum accusamus velit odio necessitatibus architecto dolorem suscipit illo rerum vel, iste dolor?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti hic mollitia aut illo earum quas aliquid quisquam deserunt eveniet atque exercitationem placeat perferendis consequuntur itaque, cumque facilis maxime soluta assumenda.</p>
                 </div>
                 <div>
@@ -546,8 +591,18 @@
                     <!-- Adicione paginação, se desejar -->
                     <!-- <div class="swiper-pagination"></div> -->
                 </div>
+                <p class="montserrat-bold">Procure a nossa empresa no Google e confira você mesmo</p>
+                <div id="searchBar">
+                    <img src="assets/images/icones/colourful-google-logo-on-white-background64x64_10353285.png" alt="Logomarca do Google" id="logomarca-Google">
+                    <div class="typewriter">
+                        <div id="text"></div>
+                        <div class="cursor"></div>
+                    </div>
+                    <img src="assets/images/icones/magnifying-glass-or-search-icon-flat-vector-graphic64x64-on_4897827.png" alt="Lupa" id="lupa">
+                </div>
             </div>
             
+
         </section>
         <footer></footer>
     </main>
@@ -604,6 +659,47 @@
             slide.addEventListener('mouseup', resumeAutoplay);
             slide.addEventListener('touchstart', pauseAutoplay);
             slide.addEventListener('touchend', resumeAutoplay);
+        });
+
+
+        
+        // Animação de pesquisa no google
+
+        const textElement = document.getElementById('text');
+        const textArray = ['Ômega Administradora Uberlândia'];
+        const typingSpeed = 150;
+        const erasingSpeed = 100;
+        const newTextDelay = 2000; // Delay between current and next text
+
+        let textArrayIndex = 0;
+        let charIndex = 0;
+
+        function type() {
+        if (charIndex < textArray[textArrayIndex].length) {
+            textElement.textContent += textArray[textArrayIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(type, typingSpeed);
+        } else {
+            setTimeout(erase, newTextDelay);
+        }
+        }
+
+        function erase() {
+        if (charIndex > 0) {
+            textElement.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(erase, erasingSpeed);
+        } else {
+            textArrayIndex++;
+            if (textArrayIndex >= textArray.length) {
+            textArrayIndex = 0;
+            }
+            setTimeout(type, typingSpeed + 500);
+        }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(type, newTextDelay + 250);
         });
     </script>
 </body>
