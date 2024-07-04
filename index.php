@@ -394,7 +394,53 @@
             }
 
         /* Sessão 6 */
-        
+            .section-6{
+                padding: 1em 4em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .section-6 p{
+                text-align: center;
+                font-size: 1.5em;
+                margin-top: 0;
+            }
+            #container__videosYoutube{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            #container__videosYoutube iframe{
+                width: 560px;
+                height: 315px;
+                border-radius: .4em;
+                margin: .5em;
+            }
+            .section-6 nav{
+                padding: .2em .2em;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--azulEscuro2);
+                border-radius: 8px;
+                margin-top: 1em;
+            }
+            .section-6 nav a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .section-6 nav a img{
+                margin-left: .5em;
+                transition: .5s;
+            }
+            .section-6 nav a:hover img{
+                scale: 110%;
+            }
+
+        /* Sessão 7 */
+
 
     </style>
     <title>Ômega Administradora e Consultoria</title>
@@ -601,8 +647,26 @@
                     <img src="assets/images/icones/magnifying-glass-or-search-icon-flat-vector-graphic64x64-on_4897827.png" alt="Lupa" id="lupa">
                 </div>
             </div>
-            
-
+            <div class="section-6">
+                <p class="montserrat-bold">Visite nossas redes sociais!</p>
+                <div id="container__videosYoutube">
+                    <iframe src="https://www.youtube.com/embed/4aX_zMV6IhI?si=aD7k52JJfuqKx1Dq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/9AIQkdITAbg?si=GXasJXjW0qQOEDqp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div id="container__videosYoutube">
+                    <iframe src="https://www.youtube.com/embed/KB8zrvR-RUc?si=V5SK5H8gwf5DACV3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/7wtoMNR0OsQ?si=AjFa0oYWzu5C7HkO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <nav>
+                    <a href=""><img src="assets/images/icones/icons8-instagram-48.png" alt="Link do perfil da Ômega Administradora no Instagram" style="width: 38px;"></a>
+                    <a href=""><img src="assets/images/icones/icons8-youtube-48.png" alt="Link do canal da Ômega Administradora no Youtube"></a>
+                    <a href=""><img src="assets/images/icones/icons8-spotify-48.png" alt="Link do perfil da Ômega Administradora no Spotify"></a>
+                    <a href=""><img src="assets/images/icones/icons8-facebook-48.png" alt="Link da página da Ômega Administradora no Facebook"></a>
+                </nav>
+            </div>
+            <div class="section-7">
+                
+            </div>
         </section>
         <footer></footer>
     </main>
