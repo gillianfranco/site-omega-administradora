@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/images/logomarcas-omega/logo108x135.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9ZtP0RpnBS5aGWsaMb7uZrqhOy4HxVvQ&callback=console.debug&libraries=maps,marker&v=beta"></script>
     <style>
         :root{
             --azulEscuro1: #010c2a;
@@ -424,7 +425,7 @@
                 align-items: center;
                 background-color: var(--azulEscuro2);
                 border-radius: 8px;
-                margin-top: 1em;
+                margin-top: 2em;
             }
             .section-6 nav a{
                 display: flex;
@@ -432,7 +433,6 @@
                 align-items: center;
             }
             .section-6 nav a img{
-                margin-left: .5em;
                 transition: .5s;
             }
             .section-6 nav a:hover img{
@@ -440,7 +440,40 @@
             }
 
         /* Sessão 7 */
+        .section-7{
+            margin: 1em;
+            padding: 2em 2em;
+            background: linear-gradient(180deg, var(--azulEscuro2) 0%, var(--azulCinzaEscuro) 50%, var(--azulCinzaClaro) 100%);
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+        .section-7 h1{
+            color: var(--dourado);
+            margin-top: 0;
+            margin-bottom: .2em;
+        }
+        .section-7 > div{
+            display: flex;
+            flex-direction: row;
+            padding-top: 1em 1em 0em 0em;
 
+        }
+        .section-7 div > div{
+            width: 50%;
+            padding: .5em;
+        }
+        .section-7 div div p{
+            color: white;
+            margin: 0;
+        }
+        .section-7 div div p.montserrat-bold{
+            font-size: 1.5em;
+            margin-bottom: 1em;
+        }
+        .section-7 div gmp-map{
+            height: 100%;
+        }
 
     </style>
     <title>Ômega Administradora e Consultoria</title>
@@ -658,20 +691,37 @@
                     <iframe src="https://www.youtube.com/embed/7wtoMNR0OsQ?si=AjFa0oYWzu5C7HkO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <nav>
-                    <a href=""><img src="assets/images/icones/icons8-instagram-48.png" alt="Link do perfil da Ômega Administradora no Instagram" style="width: 38px;"></a>
-                    <a href=""><img src="assets/images/icones/icons8-youtube-48.png" alt="Link do canal da Ômega Administradora no Youtube"></a>
-                    <a href=""><img src="assets/images/icones/icons8-spotify-48.png" alt="Link do perfil da Ômega Administradora no Spotify"></a>
-                    <a href=""><img src="assets/images/icones/icons8-facebook-48.png" alt="Link da página da Ômega Administradora no Facebook"></a>
+                    <a href=""><img src="assets/images/icones/icons8-instagram-48.png" alt="Link do perfil da Ômega Administradora no Instagram" style="width: 38px; margin-left: .2em;"></a>
+                    <a href=""><img src="assets/images/icones/icons8-youtube-48.png" alt="Link do canal da Ômega Administradora no Youtube" style="margin-left: .5em;"></a>
+                    <a href=""><img src="assets/images/icones/icons8-spotify-48.png" alt="Link do perfil da Ômega Administradora no Spotify" style="margin-left: .5em;"></a>
+                    <a href=""><img src="assets/images/icones/icons8-facebook-48.png" alt="Link da página da Ômega Administradora no Facebook" style="margin-left: .5em;"></a>
                 </nav>
             </div>
             <div class="section-7">
-                
+                <h1>Quer solicitar um orçamento? Entre em contato conosco!</h1>
+                <div>
+                    <div>
+                        <p class="poppins-bold">Telefone/WhatsApp:</p>
+                        <p class="montserrat-bold">(34) 9 8413-4943</p>
+                        <p class="poppins-bold">Email:</p>
+                        <p class="montserrat-bold">omegaadmcondominio@gmail.com</p>
+                        <p class="poppins-bold">Endereço:</p>
+                        <p class="montserrat-bold">R. Vital José Carrijo, 717 – Lídice,
+                        Uberlândia – MG, 38400-080</p>
+                    </div>
+                    <div>
+                        <gmp-map center="-18.926027272298935, -48.27865241104481" zoom="14" map-id="DEMO_MAP_ID">
+                            <gmp-advanced-marker position="-18.926027272298935, -48.27865241104481" title="Ômega Administradora"></gmp-advanced-marker>
+                        </gmp-map>
+                    </div>
+                </div>
             </div>
         </section>
-        <footer></footer>
+        <footer>
+            
+        </footer>
     </main>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
     <script>
         // Animação Imagem do Above The Fold
         window.addEventListener('scroll', function() {
