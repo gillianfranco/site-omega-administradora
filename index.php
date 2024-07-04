@@ -440,40 +440,81 @@
             }
 
         /* Sessão 7 */
-        .section-7{
-            margin: 1em;
-            padding: 2em 2em;
-            background: linear-gradient(180deg, var(--azulEscuro2) 0%, var(--azulCinzaEscuro) 50%, var(--azulCinzaClaro) 100%);
-            border-radius: 25px;
-            display: flex;
-            flex-direction: column;
-        }
-        .section-7 h1{
-            color: var(--dourado);
-            margin-top: 0;
-            margin-bottom: .2em;
-        }
-        .section-7 > div{
-            display: flex;
-            flex-direction: row;
-            padding-top: 1em 1em 0em 0em;
+            .section-7{
+                margin: 1em;
+                padding: 2em 2em;
+                background: linear-gradient(180deg, var(--azulEscuro2) 0%, var(--azulCinzaEscuro) 50%, var(--azulCinzaClaro) 100%);
+                border-radius: 25px;
+                display: flex;
+                flex-direction: column;
+            }
+            .section-7 h1{
+                color: var(--dourado);
+                margin-top: 0;
+                margin-bottom: .2em;
+            }
+            .section-7 > div{
+                display: flex;
+                flex-direction: row;
+                padding-top: 1em 1em 0em 0em;
 
-        }
-        .section-7 div > div{
-            width: 50%;
-            padding: .5em;
-        }
-        .section-7 div div p{
-            color: white;
-            margin: 0;
-        }
-        .section-7 div div p.montserrat-bold{
-            font-size: 1.5em;
-            margin-bottom: 1em;
-        }
-        .section-7 div gmp-map{
-            height: 100%;
-        }
+            }
+            .section-7 div > div{
+                width: 50%;
+                padding: .5em;
+            }
+            .section-7 div div p{
+                color: white;
+                margin: 0;
+            }
+            .section-7 div div p.montserrat-bold{
+                font-size: 1.5em;
+                margin-bottom: 1em;
+            }
+            .section-7 div gmp-map{
+                height: 100%;
+            }
+
+        /* Footer */
+            footer{
+                width: 100%;
+                padding: 1em;
+                background-color: var(--azulEscuro1);
+            }
+            footer > div{
+                display: flex;
+                flex-direction: row;
+            }
+            footer div > div{
+                width: 50%;
+                display: flex;
+                align-items: center;
+            }
+            footer div div h3{
+                color: white;
+                margin-top: 0em;
+                margin-bottom: .2em;
+            }
+            footer div div{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            footer div div div a{
+                color: white;
+                transition: .5s;
+            }
+            footer div div div a:hover{
+                color: var(--dourado);
+            }
+            footer p{
+                margin: 2em 0em 0em 0em;
+                color: white;
+                text-align: center;
+            }
+        
 
     </style>
     <title>Ômega Administradora e Consultoria</title>
@@ -718,7 +759,20 @@
             </div>
         </section>
         <footer>
-            
+            <div>
+                <div>
+                    <img src="assets/images/logomarcas-omega/logo216x270.png" alt="Logomarca da Ômega Administradora">
+                </div>
+                <div>
+                    <h3>Navegação</h3>
+                    <div>
+                        <a href="" class="poppins-regular">Início</a>
+                        <a href="" class="poppins-regular">Serviços</a>
+                        <a href="" class="poppins-regular">Contato</a>
+                    </div>
+                </div>
+            </div>
+            <p>Todos os direitos reservados - Ômega Administradora e Consultoria &copy; 2024</p>
         </footer>
     </main>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
