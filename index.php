@@ -17,7 +17,7 @@
             <nav id="navBar">
                 <div>
                     <a href="/index.php">
-                        <img src="assets/images/logomarcas-omega/logo90x112.png" alt="Logomarca - Ômega">
+                        <img src="assets/images/logomarcas-omega/logo180x225.png" alt="Logomarca - Ômega">
                     </a>
                 </div>
                 <ul class="poppins-bold">
@@ -25,8 +25,18 @@
                     <li><a href="#contato">Contato</a></li>
                     <li><a href="https://omegaadm.superlogica.net/clients/areadocondomino" id="areaDoCondomino" target="_blank">Área do Condômino</a></li>
                 </ul>
+                <div id="toggle-btn">
+                    <p>&#9776;</p>
+                </div>
             </nav>
             <div class="containerImagem-above-the-fold">
+                <nav class="dropdown__menu_celular">
+                    <ul>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="https://omegaadm.superlogica.net/clients/areadocondomino" id="areaDoCondomino" target="_blank">Área do Condômino</a></li>
+                    </ul>
+                </nav>
             </div>
             <div id="containerBotaoAreaDoCondomino">
                 <a href="https://omegaadm.superlogica.net/clients/areadocondomino" class="poppins-bold" target="_blank">CLIQUE AQUI PARA ACESSAR A ÁREA DO CONDÔMINO</a>
@@ -44,7 +54,7 @@
                 </div>
             </div>
             <div class="section-2">
-                <p class="montserrat-bold" style="font-size: 1.5em; text-shadow: 1px 3px 7px black; margin: 0; text-align: justify;">O propósito da Ômega Administradora é claro: facilitar a vida condominial e do síndico, oferecendo uma prestação de serviços transparente, responsável, ágil, eficiente, eficaz e personalizada. Nossa empresa se compromete a ser sua parceira de confiança, oferecendo soluções administrativas que realmente fazem a diferença no dia a dia condominial e empresarial.</p>
+                <p class="montserrat-bold">O propósito da Ômega Administradora é claro: facilitar a vida condominial e do síndico, oferecendo uma prestação de serviços transparente, responsável, ágil, eficiente, eficaz e personalizada. Nossa empresa se compromete a ser sua parceira de confiança, oferecendo soluções administrativas que realmente fazem a diferença no dia a dia condominial e empresarial.</p>
             </div>
             <div class="section-3" id="servicos">
                 <p class="poppins-bold">CONHEÇA NOSSOS</p>
@@ -110,11 +120,11 @@
             </div>
             <div class="section-4">
                 <p class="poppins-bold">POR QUE ESCOLHER A</p>
-                <h1>Ômega Administradora?</h1>
+                <h1 id="tituloSection4">Ômega Administradora?</h1>
                 <p>A Ômega Administradora cresce continuamente, aprimorando seus serviços com as melhores práticas. Nosso atendimento é rápido e resolutivo, garantindo que todas as demandas sejam atendidas com precisão. Oferecemos soluções personalizadas para atender às necessidades específicas de cada condomínio e empresa, facilitando a vida condominial e empresarial com eficiência e qualidade. Nossa equipe de advogados, contadores e síndicos profissionais assegura um serviço transparente, comprometido e excelente, proporcionando uma administração segura e eficaz.</p>
             </div>
             <div class="section-5">
-                <p class="montserrat-bold">Somos a administradora de condomínios<br>mais bem avaliada no Google em Uberlândia</p>
+                <p class="montserrat-bold" id="tituloSection5">Somos a administradora de condomínios<br>mais bem avaliada no Google em Uberlândia</p>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -195,7 +205,7 @@
                     <!-- Adicione paginação, se desejar -->
                     <!-- <div class="swiper-pagination"></div> -->
                 </div>
-                <p class="montserrat-bold">Procure a nossa empresa no Google e confira você mesmo</p>
+                <p class="montserrat-bold" id="procureNossaEmpresa">Procure a nossa empresa no Google e confira você mesmo</p>
                 <div id="searchBar">
                     <img src="assets/images/icones/colourful-google-logo-on-white-background64x64_10353285.png" alt="Logomarca do Google" id="logomarca-Google">
                     <div class="typewriter">
@@ -216,7 +226,7 @@
                     <iframe src="https://www.youtube.com/embed/7wtoMNR0OsQ?si=AjFa0oYWzu5C7HkO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <nav>
-                    <a href="https://www.instagram.com/omegaadministradora/"><img src="assets/images/icones/icons8-instagram-48.png" alt="Link do perfil da Ômega Administradora no Instagram" style="width: 38px; margin-left: .2em;"></a>
+                    <a href="https://www.instagram.com/omegaadministradora/"><img src="assets/images/icones/icons8-instagram-48.png" alt="Link do perfil da Ômega Administradora no Instagram" style="padding: .4em;"></a>
                     <a href="https://youtube.com/@podcastomega-ix4il?si=GF3pvd326GRqhbHM"><img src="assets/images/icones/icons8-youtube-48.png" alt="Link do canal da Ômega Administradora no Youtube" style="margin-left: .5em;"></a>
                     <a href="https://www.facebook.com/omegaadmeconsultoria"><img src="assets/images/icones/icons8-facebook-48.png" alt="Link da página da Ômega Administradora no Facebook" style="margin-left: .5em;"></a>
                 </nav>
@@ -244,7 +254,7 @@
         <footer>
             <div>
                 <div>
-                    <img src="assets/images/logomarcas-omega/logo216x270.png" alt="Logomarca da Ômega Administradora">
+                    <img src="assets/images/logomarcas-omega/logo370x463.png" alt="Logomarca da Ômega Administradora">
                 </div>
                 <div>
                     <h3>Navegação</h3>
@@ -261,7 +271,7 @@
         </a>
         <div id="popup-admCondominios" class="popup">
             <div class="popup-content">
-                <span class="close" id="closePopupAdmCondominios">&times;</span>
+                <span class="close" id="closePopupAdmCondominios"><h3>Administração de Condomínios</h3><p>&times;</p></span>
                 <ul class="montserrat-regular">
                     <li>Condomínio Virtual: Superlógica</li>
                     <li>Controle do cadastro de proprietários;</li>
@@ -280,7 +290,7 @@
         </div>
         <div id="popup-assessoriacontabil" class="popup">
             <div class="popup-content">
-                <span class="close" id="closePopupAssessoriaContabil">&times;</span>
+                <span class="close" id="closePopupAssessoriaContabil"><h3>Assessoria Contábil</h3><p>&times;</p></span>
                 <ul class="montserrat-regular">
                     <li>Acompanhamento tributário e retenções;</li>
                     <li>Elaboração de previsão orçamentária;</li>
@@ -307,7 +317,7 @@
         </div>
         <div id="popup-assessoriajuridica" class="popup">
             <div class="popup-content">
-                <span class="close" id="closePopupAssessoriaJuridica">&times;</span>
+                <span class="close" id="closePopupAssessoriaJuridica"><h3>Assessoria Jurídica</h3><p>&times;</p></span>
                 <ul class="montserrat-regular">
                     <li>Reclamatória Trabalhista;</li>
                     <li>Pensão Alimentícia;</li>
@@ -323,7 +333,7 @@
         </div>
         <div id="popup-sindicoProfissional" class="popup">
             <div class="popup-content">
-                <span class="close" id="closePopupSindicoProfissional">&times;</span>
+                <span class="close" id="closePopupSindicoProfissional"><h3>Síndico Profissional</h3><p>&times;</p></span>
                 <ul class="montserrat-regular">
                     <li>Busca-se compatibilizar os interesses individuais aos interesses coletivos, no intuito de solucionar conflitos e promover o cumprimento da convenção condominial, regimento interno e legislação civil;</li>
                     <li>Promover uma gestão eficiente e inovadora;</li>
@@ -346,7 +356,7 @@
         </div>
         <div id="popup-recursosHumanos" class="popup">
             <div class="popup-content">
-                <span class="close" id="closePopupRecursosHumanos">&times;</span>
+                <span class="close" id="closePopupRecursosHumanos"><h3>Recursos Humanos</h3><p>&times;</p></span>
                 <ul class="montserrat-regular">
                     <li>Organização completa dos processos de RH/Departamento Pessoal;</li>
                     <li>Gestão de documentos relacionados a funcionário;</li>
@@ -363,7 +373,7 @@
         </div>
         <div id="popup-cobranca" class="popup">
             <div class="popup-content">
-                <span class="close" id="closePopupCobranca">&times;</span>
+                <span class="close" id="closePopupCobranca"><h3>Cobrança</h3><p>&times;</p></span>
                 <ul class="montserrat-regular">
                     <li>Cobranças Extrajudicial;</li>
                     <li>Emissão de cartas personalizadas com o debito atualizado;</li>

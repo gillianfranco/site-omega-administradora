@@ -1,3 +1,16 @@
+// navBar
+
+const toggleBtn = document.querySelector('#toggle-btn');
+const toggleBtnIcon = document.querySelector('#toggle-btn p');
+const dropDownMenu = document.querySelector('.dropdown__menu_celular');
+
+toggleBtn.onclick = function(){
+  dropDownMenu.classList.toggle('open');
+  const isOpen = dropDownMenu.classList.contains('open');
+
+  toggleBtnIcon.innerHTML = isOpen ? '&#10006;' : '&#9776;';
+}
+
 // Pop Ups
 
 /* ------------------- Adm Condomínios -------------- */
@@ -201,7 +214,7 @@ slides.forEach(function(slide) {
 // Animação de pesquisa no google
 
 const textElement = document.getElementById('text');
-const textArray = ['Ômega Administradora Uberlândia'];
+const textArray = ['Ômega Administradora'];
 const typingSpeed = 150;
 const erasingSpeed = 100;
 const newTextDelay = 2000; // Delay between current and next text
