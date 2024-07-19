@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/images/logomarcas-omega/logo90x112.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/logomarcas-omega/logo180x225.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Ômega Administradora e Consultoria</title>
@@ -26,7 +26,7 @@
                     <li><a href="https://omegaadm.superlogica.net/clients/areadocondomino" id="areaDoCondomino" target="_blank">Área do Condômino</a></li>
                 </ul>
                 <div id="toggle-btn">
-                    <p>&#9776;</p>
+                    <p style="color: var(--dourado);">&#9776;</p>
                 </div>
             </nav>
             <div class="containerImagem-above-the-fold">
@@ -226,7 +226,7 @@
                     <iframe src="https://www.youtube.com/embed/7wtoMNR0OsQ?si=AjFa0oYWzu5C7HkO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <nav>
-                    <a href="https://www.instagram.com/omegaadministradora/"><img src="assets/images/icones/icons8-instagram-48.png" alt="Link do perfil da Ômega Administradora no Instagram" style="padding: .4em;"></a>
+                    <a href="https://www.instagram.com/omegaadministradora/"><img src="assets/images/icones/icons8-instagram-48.png" alt="Link do perfil da Ômega Administradora no Instagram" style="padding: .2em;"></a>
                     <a href="https://youtube.com/@podcastomega-ix4il?si=GF3pvd326GRqhbHM"><img src="assets/images/icones/icons8-youtube-48.png" alt="Link do canal da Ômega Administradora no Youtube" style="margin-left: .5em;"></a>
                     <a href="https://www.facebook.com/omegaadmeconsultoria"><img src="assets/images/icones/icons8-facebook-48.png" alt="Link da página da Ômega Administradora no Facebook" style="margin-left: .5em;"></a>
                 </nav>
