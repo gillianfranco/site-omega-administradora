@@ -267,7 +267,7 @@
             <p>Todos os direitos reservados - Ômega Administradora e Consultoria &copy; 2024</p>
         </footer>
         <a href="https://wa.me/5534984134943" class="whatsapp-link" target="_blank">
-            <img src="assets/images/icones/vecteezy_whatsapp-square-logo-on-transparent-background_14414681-1-80x80.png" alt="WhatsApp">
+            <img src="assets/images/icones/vecteezy_whatsapp-square-logo-on-transparent-background_14414681-1-192x192.png" alt="WhatsApp">
         </a>
         <div id="popup-admCondominios" class="popup">
             <div class="popup-content">
