@@ -9,6 +9,19 @@
     <link rel="shortcut icon" href="assets/images/logomarcas-omega/logo180x225.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <meta poster="assets/images/logomarcas-omega/logo180x225.png" name="description" content="Fundada em 2015, a Ômega Administradora e Consultoria oferece soluções em contabilidade, assessoria jurídica, recursos humanos, cobrança e administração, sempre com foco em atender às necessidades específicas de cada cliente.">
+    
+    <!-- Hotjar Tracking Code for Ômega Administradora de Condomínios -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:5084417,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
     <title>Ômega Administradora e Consultoria</title>
 </head>
 <body>
